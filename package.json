@@ -1,0 +1,24 @@
+{
+  "name": "ar-svelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.4.16",
+    "flowbite": "^2.2.1",
+    "flowbite-svelte": "^0.44.21",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "svelte": "^4.2.3",
+    "tailwindcss": "^3.3.5",
+    "vite": "^5.0.0"
+  }
+}
