@@ -1,6 +1,6 @@
-<div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0 hover:scale-105 active:scale-105 focus:scale-105">
+<div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0 hover:scale-105 active:scale-105 focus:scale-105  transition-all ease-in duration-150">
     <div
-        class="bg-stone-50 flex grow flex-col items-stretch container mx-auto px-7 py-11 rounded-3xl max-md:mt-5 max-md:px-5 w-3/4 sm:w-full"
+        class="bg-stone-50 flex grow flex-col items-stretch container mx-auto px-7 py-11 rounded-3xl hover:ring-2 ring-gradient hover:ring-blue-600 max-md:mt-5 max-md:px-5 w-3/4 sm:w-full gradient-ring"
     >
         <img
             loading="lazy"
@@ -11,7 +11,7 @@
         <div
             class="text-slate-700 text-center text-3xl font-bold leading-10 self-center whitespace-nowrap mt-10"
         >
-            ITR Filing
+            ITR Filling
         </div>
         <div
             class="text-zinc-400 text-center text-sm font-medium leading-6 mt-2.5"
