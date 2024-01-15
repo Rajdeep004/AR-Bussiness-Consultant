@@ -1,3 +1,7 @@
+<script>
+    export let heading, caption;
+</script>
+
 <div class="flex flex-col items-stretch w-3/12 ml-5 max-md:w-full max-md:ml-0 hover:scale-105 active:scale-105 focus:scale-105  transition-all ease-in duration-150">
     <div
         class="bg-stone-50 flex grow flex-col items-stretch container mx-auto px-7 py-11 rounded-3xl hover:ring-2 ring-gradient hover:ring-blue-600 max-md:mt-5 max-md:px-5 w-3/4 sm:w-full gradient-ring"
@@ -9,15 +13,14 @@
             alt=""
         />
         <div
-            class="text-slate-700 text-center text-3xl font-bold leading-10 self-center whitespace-nowrap mt-10"
+            class="text-slate-700 text-center text-3xl font-bold leading-1z1z self-center  mt-10"
         >
-            ITR Filling
-        </div>
+            { heading }
+        </div> 
         <div
             class="text-zinc-400 text-center text-sm font-medium leading-6 mt-2.5"
         >
-            Get Expert assistance in tax filing for Salaried and self-employed
-            individuals, NRIs, Capital gains, and more.
+            { caption }
         </div>
     </div>
 </div>
