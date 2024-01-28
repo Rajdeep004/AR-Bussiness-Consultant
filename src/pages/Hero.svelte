@@ -18,28 +18,28 @@
     </div>
     <!-- Social Icons -->
     <div
-      class="flex w-[201px] max-w-full items-stretch gap-3 self-start max-md:justify-center max-md:mt-10"
+      class="flex max-w-full items-stretch gap-3 self-start max-md:justify-center max-md:mt-10"
     >
-      <div
+      <!-- <div
         class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
       >
         <img src="/socials/fb.svg" alt="Facebook Logo" class="scale-75" />
-      </div>
-      <div
+      </div> -->
+      <!-- <div
         class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
       >
         <img src="/socials/ig.svg" alt="Instagram Logo" />
-      </div>
+      </div> -->
       <div
-        class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-1 rounded-full border-solid"
+        class="justify-center items-center flex shrink-0  flex-1 rounded-full md:p-2 ring-2 ring-[#314259]"
       >
-        <img src="/socials/in.svg" alt="Linkedin Logo" />
+        <a href="https://www.linkedin.com/company/a-r-business-consultant-limited" target="_blank"><img src="/socials/in.svg" alt="Linkedin Logo" class="scale-75 md:scale-110"/></a>
       </div>
-      <div
+      <!-- <div
         class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
       >
         <img src="/socials/x.svg" alt="Twitter Logo" />
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="w-3/4 sm:w-1/2 container mx-auto mt-4">
