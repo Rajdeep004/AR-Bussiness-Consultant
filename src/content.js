@@ -93,10 +93,54 @@ const services = [
     },
 ];
 
-
+const testimonials = [
+    {
+        id: 1,
+        author: "Click & Buy Services Limited",
+        caption: "E-Commerce Business",
+        comment:
+            "Starting a new e-commerce venture while juggling a full-time job kept me incredibly occupied. Unfortunately, amidst the hustle, compliance with booking records slipped my mind. A&R stepped in swiftly, assisting us with Company House notices and finalizing our bookkeeping and accounting records. Their prompt support during a crunch time was invaluable.",
+    },
+    {
+        id: 2,
+        author: "SMVH Limited",
+        caption: "Pepe’s Peri Peri",
+        comment:
+            "Switching to A&R for our bookkeeping needs marked a significant milestone for us. Their team not only streamlined our financial processes but also seamlessly transitioned our records from the previous bookkeeper. Their insights, accuracy, and efficiency have made managing our finances a breeze. Highly recommended!",
+    },
+    {
+        id: 3,
+        author: "TK Multi Limited",
+        caption: "E-Commerce Business",
+        comment:
+            " Over the past year, working with A&R has been nothing short of exceptional. Their bookkeeping & business consulting services have helped me organize finances, manage expenses, and stay compliant with tax obligations. Responsive, professional, and dedicated, their team has consistently contributed to our success",
+    },
+    {
+        id: 4,
+        author: "Global Skills Recruiter Limited",
+        caption: "Employment Placement Agencies",
+        comment:
+            "Finding a trustworthy bookkeeping partner was paramount. A&R not only handled our day-to-day financial tasks but also offered strategic advice that empowered informed business decisions. Thanks to their expertise, we've directed more focus towards business growth.",
+    },
+    {
+        id: 5,
+        author: "M R Carter Builders Ltd",
+        caption: "Commercial & Home Builders",
+        comment:
+            "In the real estate industry, precision and detail matter immensely. Entrusting A&R with our bookkeeping needs, including VAT & CIS compliances, has been a game-changer. Their profound understanding of real estate intricacies has kept our financial records meticulously organized and up-to-date.",
+    },
+    {
+        id: 6,
+        author: "Digi Squad Ltd ",
+        caption: "Advertisement & Marketing Agencies",
+        comment:
+            " Running a marketing agency entails numerous responsibilities, but thanks to A&R, bookkeeping and accounting compliances aren't among them. They've proven to be a reliable partner, handling everything from payroll to tax preparation with precision and professionalism. With their support, we're better equipped to serve our clients and expand our business.",
+    },
+];
 
 export {
     hero,
     about,
-    services
+    services,
+    testimonials
 }
