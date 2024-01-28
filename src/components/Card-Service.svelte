@@ -18,7 +18,7 @@
             { heading }
         </div> 
         <div
-            class="text-zinc-400 text-center text-sm font-medium leading-6 mt-2.5"
+            class="text-zinc-400 text-center text-md font-medium leading-6 mt-2.5"
         >
             { caption }
         </div>
