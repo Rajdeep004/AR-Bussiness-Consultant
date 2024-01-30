@@ -14,7 +14,7 @@
             <a class="text-slate-700 text-xl font-medium leading-6 whitespace-nowrap" href="/">Home</a>
             <a class="text-slate-700 text-xl font-medium leading-6 whitespace-nowrap" href="#about">About</a>
             <a class="text-slate-700 text-xl font-medium leading-6 whitespace-nowrap" href="#services">Services</a>
-            <a class="text-slate-700 text-xl font-medium leading-6 whitespace-nowrap" href="#testimonials">Testimonials</a>
+            <a class="text-slate-700 text-xl font-medium leading-6 whitespace-nowrap" href="#testimonials">Newsletter</a>
         </ul>
     </div>
     <div class="navbar-end md:justify-evenly">
