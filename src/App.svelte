@@ -8,6 +8,7 @@
   import Footer from "./pages/Footer.svelte";
 
   import services from "./pages/servicepage.svelte"
+  import Connect from "./pages/connect.svelte";
 </script>
 
 <Router>
@@ -22,6 +23,7 @@
     </div>
   </Route>
   <Route path="/services" component={services}></Route>
+  <Route path="/connect" component={Connect}></Route>
 </Router>
 
 <style>
