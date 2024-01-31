@@ -24,6 +24,7 @@ const services = [
             "CIS return preparations",
             "Final Accounts & Audit preparation",
         ],
+        question: "Why good businesses need good bookkeeping?",
         whyChoose: [
             "Informed Decision-Making",
             "Financial Transparency",
@@ -46,6 +47,7 @@ const services = [
             "Tax Preparation",
             "Virtual CFO Services",
         ],
+        question: "Why Partner with Us?",
         whyChoose: [
             "Expertise and Experience: Accounts are managed by dedicated by Chartered Accountant",
             "Cost-Effective Solutions: Teams are managed in India & UK to cut down costs.",
@@ -66,6 +68,7 @@ const services = [
             "Restructuring and Turnaround Planning",
             "Performance Improvement",
         ],
+        question: "Why Choose A&R?",
         whyChoose: [
             "Proven Track Record: Our Clients' testimonials prove our work.",
             "Holistic Approach: Work with the Indian community to facilitate in a better manner.",
@@ -78,6 +81,7 @@ const services = [
         description:
             "Welcome to the future of business efficiency with our cutting-edge Automated Business Solutions. Streamline your operations, enhance productivity, and stay ahead in the competitive landscape.",
         offerings: ["Workflow Automation", "Data Management", "Customer Relationship Management (CRM)", "Financial Automation"],
+        question: "Why choose our Automated Business Solutions?",
         whyChoose: [
             "Tailored to Your Needs: We have industries qualified professionals to understand your business needs and tailor your solutions for your business.",
             "Innovation at the Core: Our continuous learning program makes us innovative every day.",
@@ -89,6 +93,7 @@ const services = [
         description:
             "Welcome to A & R, where your success is our priority. Our Tailored Business Support Services provide a personalized and strategic approach to drive growth, efficiency, and excellence.",
         offerings: ["Financial Management", "Compliance and Regulatory Support", "Strategic Planning", "Operational Efficiency"],
+        question: "Why Patner with A & R",
         whyChoose: ["Client-Centric Approach", "Proven Results", "Long-Term Partnership"],
     },
 ];
