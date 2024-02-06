@@ -2,14 +2,14 @@ const hero = {
 
 };
 
-const about = {
-    description: `Welcome to A&R Business Consultants, your dedicated financial partner situated in the heart of London. With a collective experience of 25 years, our team comprises skilled accountants and industry professionals committed to providing individuals and small businesses with clear, expert, and affordable advice on accounting and business compliance.
-    Our journey at A&R began with CA Rajvi Bhalani (Ex. CEO), a highly qualified Chartered Accountant and a member of the Indian Institute of Chartered Accountants. Holding a Master of Business Administration from K S School of Business, Gujarat University, Rajvi brings over 6 years of diverse experience in Indian-UK business contexts.
-    Taking the helm thereafter is Mr. Abhi Patel, Chief Executive Officer of A&R Business Consultants. A graduate from Gujarat University, Abhi seamlessly integrated international business management from the University of West London into his expertise. With a rich background in consulting, he has contributed to constructive projects on ESG with Westmount Business, Pladis Global, Disney, and Chiswick Business Park. His experience extends to asset management companies and Indian fintech startups, significantly contributing to their growth in the UK and Europe.
-    Overseeing our operations in India is Neepa Patel, our Managing Director. A graduate from Gujarat University, Neepa brings a wealth of experience from her four years with one of the Big Four auditing firms. Her audit portfolio includes multinational companies like Adani and many others.
-    Further enriching our team are our Business Advisors, ACCA Neel Patel and CA Pratik Mangukia. Their expertise enhances our ability to provide comprehensive and tailored solutions to meet the unique needs of our clients.
-    At A&R Business Consultants, we go beyond being mere advisors; we are partners in your financial success. Trust us to navigate the complexities of accounting and compliance, allowing you to focus on what truly matters for the growth and prosperity of your business.`
-}
+const about = [
+    "Welcome to A&R Business Consultants, your dedicated financial partner situated in the heart of London. With a collective experience of 25 years, our team comprises skilled accountants and industry professionals committed to providing individuals and small businesses with clear, expert, and affordable advice on accounting and business compliance.",
+    "Our journey at A&R began with CA Rajvi Bhalani (Ex. CEO), a highly qualified Chartered Accountant and a member of the Indian Institute of Chartered Accountants. Holding a Master of Business Administration from K S School of Business, Gujarat University, Rajvi brings over 6 years of diverse experience in Indian-UK business contexts.",
+    "Taking the helm thereafter is Mr. Abhi Patel, Chief Executive Officer of A&R Business Consultants. A graduate from Gujarat University, Abhi seamlessly integrated international business management from the University of West London into his expertise. With a rich background in consulting, he has contributed to constructive projects on ESG with Westmount Business, Pladis Global, Disney, and Chiswick Business Park. His experience extends to asset management companies and Indian fintech startups, significantly contributing to their growth in the UK and Europe.",
+    "Overseeing our operations in India is Neepa Patel, our Managing Director. A graduate from Gujarat University, Neepa brings a wealth of experience from her four years with one of the Big Four auditing firms. Her audit portfolio includes multinational companies like Adani and many others.",
+    "Further enriching our team are our Business Advisors, ACCA Neel Patel and CA Pratik Mangukia. Their expertise enhances our ability to provide comprehensive and tailored solutions to meet the unique needs of our clients.",
+    "At A&R Business Consultants, we go beyond being mere advisors; we are partners in your financial success. Trust us to navigate the complexities of accounting and compliance, allowing you to focus on what truly matters for the growth and prosperity of your business."
+]
 
 const services = [
     {

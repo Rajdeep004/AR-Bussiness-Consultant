@@ -79,17 +79,17 @@
                     <ul class="tracking-wide font-medium  text-sm 
                     flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
                         <li>
-                            <a href="" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            <a href="/" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            <a href="/services#AboutUS" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>About us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            <a href="/services#Services" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Services</span>
                             </a>
                         </li>
@@ -103,11 +103,12 @@
                             Sign up
                         </span>
                     </button> -->
+                    <a href="/connect">
                     <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-blue-600 hover:bg-blue-700 active:bg-blue-700 focus:bg-blue-600 sm:w-max">
-                        <span class="block text-white font-semibold text-sm">
+                        <span  class="block text-white font-semibold text-sm">
                             Connect
                         </span>
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </div>

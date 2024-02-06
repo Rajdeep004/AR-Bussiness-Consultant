@@ -1,9 +1,8 @@
 <script>
   import Navbar from "./Navbar.svelte";
   import Footer from "./Footer.svelte";
-  import ServiceCard from "../components/Small-service.svelte";
   import MainContent from "../components/Main-Content.svelte";
-  import { services } from "../content";
+  import { services,about } from "../content";
   import SmallService from "../components/Small-service.svelte";
 
   const serviceCards = [
@@ -30,18 +29,36 @@
   ];
 
   let serviceIdx = -1; // Stores the currently selected service name
-  const updateSerIdx = (e) =>{
-    serviceIdx = e.detail
-    console.log("updateSerIdx to:", serviceIdx );
-  }
+  const updateSerIdx = (e) => {
+    serviceIdx = e.detail;
+    console.log("updateSerIdx to:", serviceIdx);
+  };
 </script>
 
 <Navbar />
-<section id="Services" class="container mx-auto flex flex-col md:flex-row md:max-h-screen gap-12">
+
+<div class="bg-gradient-to-b sm:bg-gradient-to-r from-[#006FF2] to-[#004391] mb-8">
+  <section
+    id="AboutUS"
+    class="flex flex-col px-6 py-8 gap-4 justify-center items-center"
+  >
+  {#each about as para}
+    <p
+      class="max-w-4xl font-medium text-white text-justify selection:bg-white selection:text-black"
+    > {para} </p>
+  {/each}
+    
+  </section>
+</div>
+
+<section
+  id="Services"
+  class="container mx-auto flex flex-col md:flex-row md:max-h-screen gap-12 mb-8"
+>
   <div
     id="sidebar"
     class="md:w-1/2 md:max-h-screen lg:flex flex-col items-center justify-center lg:flex-row"
-  > 
+  >
     <div class="hidden scale-95 space-y-4 gap-4 lg:block">
       <SmallService
         idx={0}
@@ -81,9 +98,11 @@
         on:addIdx={updateSerIdx}
       />
     </div>
-    <div class="lg:hidden flex gap-4 overflow-x-auto overscroll-none no-scrollbar py-8">
-      {#each serviceCards as card,index }
-        <SmallService 
+    <div
+      class="lg:hidden flex gap-4 overflow-x-auto overscroll-none no-scrollbar py-8"
+    >
+      {#each serviceCards as card, index}
+        <SmallService
           idx={index}
           heading={card.heading}
           caption={card.caption}
@@ -104,7 +123,7 @@
   }
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 </style>
