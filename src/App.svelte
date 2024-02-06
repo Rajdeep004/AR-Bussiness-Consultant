@@ -9,6 +9,7 @@
 
   import services from "./pages/servicepage.svelte"
   import Connect from "./pages/connect.svelte";
+    import AboutPage from "./pages/AboutPage.svelte";
 </script>
 
 <Router>
@@ -22,6 +23,7 @@
       <Footer />
     </div>
   </Route>
+  <Route path="/about" component={AboutPage}></Route>
   <Route path="/services" component={services}></Route>
   <Route path="/connect" component={Connect}></Route>
 </Router>

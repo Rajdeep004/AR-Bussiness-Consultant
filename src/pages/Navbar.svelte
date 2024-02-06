@@ -1,6 +1,6 @@
 <script>
     import { Link } from "svelte-navigator";
-    import App from "../App.svelte";
+
 </script>
 <!-- <nav class="navbar bg-base-100 sm:items-start">
     <div class="justify-around w-1/2">
@@ -57,8 +57,8 @@
         <div class="flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
             <input type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden">
             <div class="w-full px-6 flex justify-between lg:w-max md:px-0 z-30">
-                <a href="#" aria-label="logo" class="flex space-x-2 items-center">
-                    <img src="/public/AR-logo.svg" class="w-[4.5rem] lg:w-28" alt="AR logo">
+                <a href="/" aria-label="logo" class="flex space-x-2 items-center">
+                    <img src="/AR-logo.svg" class="w-[4.5rem] lg:w-28" alt="AR logo">
                     <!-- <span class="text-2xl font-bold text-blue-900 dark:text-white">AR Business <span class="text-blue-700 dark:text-blue-300"> Consultant</span></span> -->
                 </a>
 
@@ -78,21 +78,21 @@
                 <div class="text-gray-600 lg:pr-4 w-full">
                     <ul class="tracking-wide font-medium  text-sm 
                     flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
-                        <li>
-                            <a href="/" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                        <Link to="/">
+                            <span href="/" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/services#AboutUS" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            </span>
+                        </Link>
+                        <a href="#about">
+                            <div class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>About us</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/services#Services" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            </div>
+                        </a>
+                        <Link to="/services">
+                            <div class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Services</span>
-                            </a>
-                        </li>
+                            </div>
+                        </Link>
                     </ul>
                 </div>
 
@@ -103,12 +103,12 @@
                             Sign up
                         </span>
                     </button> -->
-                    <a href="/connect">
+                    <Link to="/connect">
                     <button type="button" title="Start buying" class="w-full py-3 px-6 text-center rounded-full transition bg-blue-600 hover:bg-blue-700 active:bg-blue-700 focus:bg-blue-600 sm:w-max">
                         <span  class="block text-white font-semibold text-sm">
                             Connect
                         </span>
-                    </button></a>
+                    </button></Link>
                 </div>
             </div>
         </div>
