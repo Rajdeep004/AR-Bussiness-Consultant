@@ -30,9 +30,9 @@
   ];
 
   let serviceIdx = -1; // Stores the currently selected service name
-  const updateSerIdx = (idx) =>{
-    serviceIdx = idx
-    console.log("updateSerIdx to:", serviceIdx);
+  const updateSerIdx = (e) =>{
+    serviceIdx = e.detail
+    console.log("updateSerIdx to:", serviceIdx );
   }
 </script>
 
@@ -40,42 +40,45 @@
 <section id="Services" class="container mx-auto flex flex-col md:flex-row">
   <div
     id="sidebar"
-    class="md:w-[50%] md:max-h-screen flex flex-col items-center justify-center lg:flex-row"
+    class="md:w-1/2 md:max-h-screen flex flex-col items-center justify-center lg:flex-row"
   >
-    <div class="scale-95 space-y-4">
+    <div class="scale-95 space-y-4 inline-flex gap-4 lg:block">
       <SmallService
         idx={0}
         heading={serviceCards[0].heading}
         caption={serviceCards[0].caption}
-        on:click={updateSerIdx}
+        isSelected={serviceIdx == 0}
+        on:addIdx={updateSerIdx}
       />
       <SmallService
         idx={1}
         heading={serviceCards[1].heading}
         caption={serviceCards[1].caption}
+        isSelected={serviceIdx == 1}
+        on:addIdx={updateSerIdx}
       />
       <SmallService
         idx={2}
         heading={serviceCards[2].heading}
         caption={serviceCards[2].caption}
-        on:click={e => {updateSerIdx(2)}}
-    
+        isSelected={serviceIdx == 2}
+        on:addIdx={updateSerIdx}
       />
     </div>
-    <div class="scale-95 space-y-4">
+    <div class="scale-95 space-y-4 inline-flex gap-4 lg:block">
       <SmallService
         idx={3}
         heading={serviceCards[3].heading}
         caption={serviceCards[3].caption}
-        on:click={e => {updateSerIdx(3)}}
-    
+        isSelected={serviceIdx == 3}
+        on:addIdx={updateSerIdx}
       />
       <SmallService
         idx={4}
         heading={serviceCards[4].heading}
         caption={serviceCards[4].caption}
-        on:click={e => {updateSerIdx(4)}}
-    
+        isSelected={serviceIdx == 4}
+        on:addIdx={updateSerIdx}
       />
     </div>
   </div>
