@@ -3,19 +3,19 @@
 </script>
 
 {#if details}
-  <section class="md:w-1/2 2xl:w-[60%]">
-    <h1 class="text-3xl font-bold">{details.title}</h1>
-    <p>{details.description}</p>
-    <h3 class="text-xl font-bold">Our Offerings</h3>
-    <ul>
+  <section class="md:w-1/2 p-4 rounded-3xl space-y-5">
+    <h1 class="text-4xl font-bold text-center mt-8 text-[#004391]">{details.title}</h1>
+    <p class="text-xl text-gray-700 font-medium text-justify ">{details.description}</p>
+    <h3 class="text-2xl text-gray-800 font-bold">Our Offerings</h3>
+    <ul class="space-y-1 list-disc ml-8">
       {#each details.offerings as offer}
-        <li>{offer}</li>
+        <li class="text-xl text-gray-700 font-medium"> {offer}</li>
       {/each}
     </ul>
-    <h3 class="text-xl font-bold">{details.question}</h3>
-    <ul>
+    <h3 class="text-2xl text-gray-800 font-bold">{details.question}</h3>
+    <ul class="space-y-1 list-disc ml-8">
       {#each details.whyChoose as str}
-        <li>{str}</li>
+        <li class="text-xl text-gray-700 font-medium">{str}</li>
       {/each}
     </ul>
   </section>

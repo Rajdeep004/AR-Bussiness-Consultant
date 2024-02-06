@@ -37,12 +37,12 @@
 </script>
 
 <Navbar />
-<section id="Services" class="container mx-auto flex flex-col md:flex-row">
+<section id="Services" class="container mx-auto flex flex-col md:flex-row md:max-h-screen gap-12">
   <div
     id="sidebar"
-    class="md:w-1/2 md:max-h-screen flex flex-col items-center justify-center lg:flex-row"
-  >
-    <div class="scale-95 space-y-4 inline-flex gap-4 lg:block">
+    class="md:w-1/2 md:max-h-screen lg:flex flex-col items-center justify-center lg:flex-row"
+  > 
+    <div class="hidden scale-95 space-y-4 gap-4 lg:block">
       <SmallService
         idx={0}
         heading={serviceCards[0].heading}
@@ -65,7 +65,7 @@
         on:addIdx={updateSerIdx}
       />
     </div>
-    <div class="scale-95 space-y-4 inline-flex gap-4 lg:block">
+    <div class="hidden scale-95 space-y-4 gap-4 lg:block">
       <SmallService
         idx={3}
         heading={serviceCards[3].heading}
@@ -81,7 +81,30 @@
         on:addIdx={updateSerIdx}
       />
     </div>
+    <div class="lg:hidden flex gap-4 overflow-x-auto overscroll-none no-scrollbar py-8">
+      {#each serviceCards as card,index }
+        <SmallService 
+          idx={index}
+          heading={card.heading}
+          caption={card.caption}
+          isSelected={serviceIdx == index}
+          on:addIdx={updateSerIdx}
+        />
+      {/each}
+    </div>
   </div>
   <MainContent details={services[serviceIdx]} />
 </section>
 <Footer />
+
+<style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+</style>

@@ -13,7 +13,7 @@
 
 <Router>
   <Route path="/" id="home">
-    <div class="bg-white flex flex-col sm:pt-8 overflow-hidden">
+    <div class="bg-white flex flex-col overflow-hidden">
       <Navbar />
       <Hero />
       <About />
