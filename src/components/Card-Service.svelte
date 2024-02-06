@@ -1,8 +1,10 @@
 <script>
+    import { Link } from "svelte-navigator";
+
     export let heading, caption;
 </script>
 
-<a href="/services#Services">
+<Link to="/services">
 <div class="flex flex-col items-stretch min-w-[25%] ml-5 max-md:w-full max-md:ml-0 hover:scale-105 active:scale-105 focus:scale-105  transition-all ease-in duration-150">
     <div
         class="bg-stone-50 flex grow flex-col items-stretch container mx-auto px-7 py-11 rounded-3xl hover:ring-2 ring-gradient hover:ring-blue-600 max-md:mt-5 max-md:px-5 w-3/4 sm:w-full gradient-ring"
@@ -25,4 +27,4 @@
         </div>
     </div>
 </div>
-</a>
+</Link>
