@@ -1,8 +1,9 @@
 <script>
   import Footer from "./Footer.svelte";
   import Navbar from "./Navbar.svelte";
+  import * as RadioGroup from "../lib/components/ui/radio-group";
+  import { Label } from "../lib/components/ui/label";
 </script>
-
 <Navbar />
 <section
   id="quotation"
@@ -14,22 +15,26 @@
     <input type="text" class="rounded-md" placeholder="phone" />
     <input type="text" class="rounded-md" placeholder="email" />
     <h4 class="text-xl font-semibold">Type of orgaisation?</h4>
-
-    <label for="org"
-      ><input type="radio" name="org" value="Company" />Company</label
-    >
-
-    <label for="org"
-      ><input type="radio" name="org" value="Sole trader" />Sole trader</label
-    >
-
-    <label for="org"
-      ><input type="radio" name="org" value="Individual" />Individual</label
-    >
-
-    <label for="org"
-      ><input type="radio" name="org" value="Patership" />Patnership</label
-    >
+    <RadioGroup.Root>
+      <div class="flex items-center space-x-2">
+        <RadioGroup.Item value="Company" id="r1" />
+        <Label for="r1">Company</Label>
+      </div>
+      <div class="flex items-center space-x-2">
+        <RadioGroup.Item value="Sole trader" id="r2" />
+        <Label for="r2">Sole trader</Label>
+      </div>
+      <div class="flex items-center space-x-2">
+        <RadioGroup.Item value="Indiviual" id="r3" />
+        <Label for="r3">Indiviual</Label>
+      </div>
+      <div class="flex items-center space-x-2">
+        <RadioGroup.Item value="Patnership" id="r4" />
+        <Label for="r4">Patnership</Label>
+      </div>
+      <RadioGroup.Input name="spacing" />
+    </RadioGroup.Root>
+    
   </div>
 </section>
 <Footer />

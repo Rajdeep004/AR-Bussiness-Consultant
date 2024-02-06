@@ -4,7 +4,7 @@
   <div class="scale-75 relative top-[50%] right-[14%]">
     <img src="flline.svg" alt="" />
   </div>
-  <div class="scale-95 relative bottom-48 left-16 sm:left-48">
+  <div class="scale-95 relative bottom-48 left-16 sm:left-48 max-w-1/2 overflow-hidden">
     <img src="AR white logo.svg" alt="AR logo" />
   </div>
   <div class="text-white inline-flex flex-col relative bottom-64 left-[80vw] gap-2 sm:scale-125">

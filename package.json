@@ -23,6 +23,7 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "bits-ui": "^0.16.0",
     "clsx": "^2.1.0",
     "lucide-svelte": "^0.320.0",
     "tailwind-merge": "^2.2.1",

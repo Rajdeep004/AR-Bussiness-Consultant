@@ -1,6 +1,6 @@
 <section
   id="hero"
-  class="flex flex-col sm:flex-row gap-4 container mx-4 md:mx-auto"
+  class="flex flex-col sm:flex-row gap-4 container mx-4 md:mx-auto mt-16"
 >
   <div class="w-full sm:w-1/2 flex flex-col justify-evenly">
     <div>
