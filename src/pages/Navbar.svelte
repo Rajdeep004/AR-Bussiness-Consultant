@@ -83,11 +83,11 @@
                                 <span>Home</span>
                             </span>
                         </Link>
-                        <a href="/#about">
+                        <Link to="/#about">
                             <div class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>About us</span>
                             </div>
-                        </a>
+                        </Link>
                         <Link to="/services">
                             <div class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Services</span>
