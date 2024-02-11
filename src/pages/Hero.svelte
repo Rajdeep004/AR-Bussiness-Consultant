@@ -18,7 +18,6 @@
   },
 ];
 
-const carouselDuration = (innerWidth > 1080 ? 3000 : 0)
 </script>
 
 <section
@@ -44,8 +43,7 @@ const carouselDuration = (innerWidth > 1080 ? 3000 : 0)
   </div>
 
   <div class="w-full lg:h-3/4 lg:w-1/2 mb-16">
-    <img src="/gallery/AR stat.png" alt="AR Statistics" class="lg:hidden">
-    <Carousel {images} duration={carouselDuration} let:Indicators class="hidden lg:block">
+    <Carousel {images} duration={3000} let:Indicators class="">
       <Indicators 
         activeClass="bg-blue-600/80 px-4" 
         inactiveClass=""
