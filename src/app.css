@@ -70,7 +70,7 @@
  
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border text-[12px] md:text-[14px] lg:text-[16px];
   }
   body {
     @apply bg-background text-foreground;

@@ -9,7 +9,7 @@
 
   import services from "./pages/servicepage.svelte"
   import Connect from "./pages/connect.svelte";
-    import AboutPage from "./pages/AboutPage.svelte";
+  import AboutPage from "./pages/AboutPage.svelte";
 </script>
 
 <Router>

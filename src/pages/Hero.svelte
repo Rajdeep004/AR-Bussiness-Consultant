@@ -1,67 +1,55 @@
+<script>
+  import { Carousel } from 'flowbite-svelte';
+  const images = [
+  {
+    alt: 'Cosmic timetraveler',
+    src: '/gallery/bookkeeping3.jpg',
+    title: ''
+  },
+  {
+    alt: 'Cosmic timetraveler',
+    src: '/gallery/bookkeeping1.avif',
+    title: ''
+  },
+  {
+    alt: 'Cosmic timetraveler',
+    src: '/gallery/bookkeeping2.jpg',
+    title: ''
+  },
+  
+];
+</script>
+
 <section
   id="hero"
-  class="flex flex-col sm:flex-row gap-4 container mx-4 md:mx-auto mt-16"
+  class="flex flex-col sm:flex-row gap-4 container mx-4 md:mx-auto mt-16 "
 >
-  <div class="w-full sm:w-1/2 flex flex-col justify-evenly">
+  <div class="w-full sm:w-1/2 flex flex-col justify-evenly gap-8 lg:gap-0">
     <div>
-      <div class="text-slate-700 text-6xl font-semibold self-stretch">
+      <h1 class="text-slate-700 text-6xl font-semibold self-stretch">
         A & R <br /> Business <br class="sm:hidden"/>  Consultant
-      </div>
-      <div class="text-zinc-400 text-2xl font-semibold leading-10">
+      </h1>
+      <h2 class="text-zinc-400 text-2xl font-semibold leading-10">
         Your Partner in Financial Growth and Stability!
-      </div>
-      <div
+      </h2>
+      <!-- <div
         class="text-slate-700 text-sm font-bold leading-5 self-stretch whitespace-nowrap mt-4 max-md:max-w-full"
       >
         Know more
-      </div>
+      </div> -->
     </div>
     <!-- Social Icons -->
-    <div
-      class="flex max-w-full items-stretch gap-3 self-start max-md:justify-center max-md:mt-10"
-    >
-      <!-- <div
-        class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
-      >
-        <img src="/socials/fb.svg" alt="Facebook Logo" class="scale-75" />
-      </div> -->
-      <!-- <div
-        class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
-      >
-        <img src="/socials/ig.svg" alt="Instagram Logo" />
-      </div> -->
-      <div
-        class="justify-center items-center flex shrink-0  flex-1 rounded-full md:p-2 ring-2 ring-[#314259]"
-      >
-        <a href="https://www.linkedin.com/company/a-r-business-consultant-limited" target="_blank"><img src="/socials/in.svg" alt="Linkedin Logo" class="scale-75 md:scale-110"/></a>
-      </div>
-      <!-- <div
-        class="justify-center items-center border border-[color:var(--AR-Gry,#314259)] flex shrink-0 h-[42px] flex-col flex-1 rounded-full border-solid"
-      >
-        <img src="/socials/x.svg" alt="Twitter Logo" />
-      </div> -->
-    </div>
+    <a href="https://www.linkedin.com/company/a-r-business-consultant-limited" target="_blank" class="inline-flex items-center gap-2 bg-blue-700/85 px-6 py-3 rounded-full text-white font-bold w-max hover:bg-blue-600/85"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 24 24"><circle cx="4" cy="4" r="2" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" dur="0.4s" values="0;1"/></circle><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10V20"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10V20"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="24" stroke-dashoffset="24" d="M10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15V20"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.5s" values="24;0"/></path></g></svg><span>Linkedin</span></a>
   </div>
-  <div class="w-3/4 sm:w-1/2 container mx-auto mt-4">
-    <div class="carousel sm:h-3/4 rounded-lg">
-      <div id="item1" class="carousel-item w-full ">
-        <img src="/gallery/bookkeeping3.jpg" class="w-full" alt="" />
-      </div>
-      <div id="item2" class="carousel-item w-full">
-        <img src="/gallery/bookkeeping2.jpg" class="w-full" alt="" />
-      </div>
-      <div id="item3" class="carousel-item w-full">
-        <img src="/gallery/bookkeeping1.avif" class="w-full" alt="" />
-      </div>
-      <!-- <div id="item4" class="carousel-item w-full">
-        <img src="https://picsum.photos/203" class="w-full" alt="" />
-      </div> -->
-    </div>
-    <div class="flex justify-center w-full py-2 gap-2">
-      <a href="#item1" class="btn btn-xs">1</a>
-      <a href="#item2" class="btn btn-xs">2</a>
-      <a href="#item3" class="btn btn-xs">3</a>
-      <!-- <a href="#item4" class="btn btn-xs">4</a> -->
-    </div>
+
+  <div class="w-full h-full sm:h-3/4 sm:w-1/2 mb-4">
+    <Carousel {images} duration={3000} let:Indicators>
+      <Indicators 
+        activeClass="bg-blue-600/80 px-4" 
+        inactiveClass=""
+        class="scale-75"
+      />
+  </Carousel>
   </div>
+  
 </section>
