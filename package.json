@@ -12,8 +12,6 @@
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "autoprefixer": "^10.4.16",
     "daisyui": "^4.4.16",
-    "flowbite": "^2.2.1",
-    "flowbite-svelte": "^0.44.21",
     "postcss": "^8.4.31",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
@@ -23,10 +21,6 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "bits-ui": "^0.16.0",
-    "clsx": "^2.1.0",
-    "lucide-svelte": "^0.320.0",
-    "tailwind-merge": "^2.2.1",
-    "tailwind-variants": "^0.1.20"
+   
   }
 }
