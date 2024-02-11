@@ -49,7 +49,7 @@
         inactiveClass=""
         class="scale-75"
       />
-  </Carousel>
+    </Carousel>
   </div>
   
 </section>

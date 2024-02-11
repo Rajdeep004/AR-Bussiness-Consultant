@@ -79,11 +79,11 @@
                     <ul class="tracking-wide font-medium  text-sm 
                     flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
                         <Link to="/">
-                            <span href="/" class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
+                            <span class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>Home</span>
                             </span>
                         </Link>
-                        <a href="#about">
+                        <a href="/#about">
                             <div class="block md:px-4 transition dark:text-gray-300 dark:hover:text-blue-300 hover:text-blue-700">
                                 <span>About us</span>
                             </div>

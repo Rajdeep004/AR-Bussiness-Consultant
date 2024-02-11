@@ -28,7 +28,7 @@
     },
   ];
 
-  let serviceIdx = -1; // Stores the currently selected service name
+  export let serviceIdx = -1; // Stores the currently selected service name
   const updateSerIdx = (e) => {
     serviceIdx = e.detail;
     console.log("updateSerIdx to:", serviceIdx);
@@ -40,7 +40,7 @@
 
 <section
   id="Services"
-  class="container mx-auto flex flex-col md:flex-row md:max-h-screen gap-12 mb-8"
+  class="container mx-0 lg:mx-auto flex flex-col md:flex-row md:max-h-screen gap-12 mb-8"
 >
   <div
     id="sidebar"
@@ -86,7 +86,7 @@
       />
     </div>
     <div
-      class="lg:hidden flex gap-4 overflow-x-auto overscroll-none no-scrollbar py-8"
+      class="lg:hidden flex gap-4 overflow-x-auto overscroll-none no-scrollbar py-8 px-4 z-10"
     >
       {#each serviceCards as card, index}
         <SmallService

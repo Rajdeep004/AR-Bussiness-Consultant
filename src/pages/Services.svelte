@@ -44,9 +44,4 @@
     <CardService heading={service[3].heading} caption={service[3].caption}/>
     <CardService heading={service[4].heading} caption={service[4].caption}/>
   </div>
-  <div
-    class="text-slate-700 text-sm font-bold leading-5 self-center whitespace-nowrap mt-12 max-md:mt-10 text-center scale-150"
-  >
-    <span class="font-bold">Explore more Services → </span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M21 12H3.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12L10 19M3 12L10 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="12;0"/></path></g></svg>
-  </div>
 </section>
