@@ -2,27 +2,28 @@
   import { Carousel } from 'flowbite-svelte';
   const images = [
   {
-    alt: 'Cosmic timetraveler',
+    alt: 'bookkeeping1',
     src: '/gallery/bookkeeping3.jpg',
     title: ''
   },
   {
-    alt: 'Cosmic timetraveler',
+    alt: 'bookkeeping2',
     src: '/gallery/bookkeeping1.avif',
     title: ''
   },
   {
-    alt: 'Cosmic timetraveler',
+    alt: 'bookkeeping3',
     src: '/gallery/bookkeeping2.jpg',
     title: ''
   },
-  
 ];
+
+const carouselDuration = (innerWidth > 1080 ? 3000 : 0)
 </script>
 
 <section
   id="hero"
-  class="flex flex-col sm:flex-row gap-4 container mx-4 md:mx-auto mt-16 "
+  class="flex flex-col md:flex-row gap-4 container mx-4 mt-16 "
 >
   <div class="w-full sm:w-1/2 flex flex-col justify-evenly gap-8 lg:gap-0">
     <div>
@@ -43,7 +44,7 @@
   </div>
 
   <div class="w-full lg:h-3/4 lg:w-1/2 mb-16">
-    <Carousel {images} duration={3000} let:Indicators>
+    <Carousel {images} duration={carouselDuration} let:Indicators class="">
       <Indicators 
         activeClass="bg-blue-600/80 px-4" 
         inactiveClass=""
