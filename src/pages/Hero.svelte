@@ -22,11 +22,11 @@
 
 <section
   id="hero"
-  class="flex flex-col md:flex-row gap-4 container mx-4 mt-16 "
+  class="flex flex-col md:flex-row gap-4 container mx-4 mt-16"
 >
   <div class="w-full sm:w-1/2 flex flex-col justify-evenly gap-8 lg:gap-0">
     <div>
-      <h1 class="text-slate-700 text-6xl font-semibold self-stretch">
+      <h1 class="text-slate-700 text-6xl font-semibold self-stretch outline-none">
         A & R <br /> Business <br class="sm:hidden"/>  Consultant
       </h1>
       <h2 class="text-zinc-400 text-2xl font-semibold leading-10">

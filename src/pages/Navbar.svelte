@@ -1,6 +1,9 @@
 <script>
     import { Link } from "svelte-navigator";
-
+    let clicked = false;
+    const toogleClick = () => {
+        clicked = !clicked
+    }
 </script>
 <!-- <nav class="navbar bg-base-100 sm:items-start">
     <div class="justify-around w-1/2">
