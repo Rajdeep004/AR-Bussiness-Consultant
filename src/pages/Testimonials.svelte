@@ -1,56 +1,98 @@
 <script>
   import { testimonials } from "../content";
+  // core version + navigation, pagination modules:
+  import Swiper from "swiper";
+  import { Navigation, Pagination, Autoplay } from "swiper/modules";
+  import { onMount } from "svelte";
+
+  import "swiper/css"; // basic Swiper styles
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+
+  // Configure Swiper (install modules)
+  Swiper.use([Navigation, Pagination, Autoplay]);
+
+  let swiper;
+  onMount(() => {
+    swiper = new Swiper(".mySwiper", {
+      modules: [Navigation, Pagination, Autoplay], // Optional if you need extra features
+      loop: true, // Slides will loop
+      slidesPerView: 1, // Number of slides visible at once
+      spaceBetween: 30, // Space between slides
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        pauseOnMouseEnter: true,
+      },
+      // Optional for navigation buttons
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
 </script>
 
-<section
-  id="testimonials"
-  class="bg-neutral-100 self-stretch flex w-full flex-col items-center px-5 py-12 max-md:max-w-full max-md:mt-10"
->
+<div class="bg-gray-50 dark:bg-gray-900 py-16">
   <div
-    class="justify-center text-neutral-600 text-center text-6xl font-bold leading-[72px] tracking-tighter max-w-[555px] mt-3.5 max-md:text-4xl max-md:leading-[54px]"
+    class="container m-auto text-gray-600 dark:text-gray-300 md:px-12 xl:px-6"
   >
-    Testimonials
-  </div>
-  <div
-    class="slider self-stretch flex flex-col md:flex-row justify-center gap-5 mt-16 mb-52 max-md:max-w-full flex-wrap max-md:justify-center max-md:my-10"
-  >
-    {#each testimonials as testimonial, index(testimonial.id)}
-      <div
-        class="item md:w-1/4 opacity-100 hover:scale-105"
-        style="padding-left: 28.80px; padding-right: 28.80px; padding-top: 25.20px; padding-bottom: 25.20px; background: white; border-radius: 10.80px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 2rem; display: inline-flex"
-  
+    <div class="mb-12 space-y-4 px-6 md:px-0">
+      <h2
+        class="text-slate-700 text-6xl font-bold leading-[65px] self-center whitespace-nowrap mt-12 max-md:text-4xl max-md:leading-10 max-md:mt-10 text-center"
       >
-        <img src="/quote.svg" alt="QuoteImage"/>
-
-        <div
-          class="text-2xl"
-          style="color: #413D45;  font-weight: 600; word-wrap: break-word"
-        >
-          { testimonial.comment }
-        </div>
-
-        <div
-          style="align-self: stretch; padding-bottom: 0.90px; padding-right: 64.14px; flex-direction: column; justify-content: center; align-items: start; display: inline-flex"
-        >
-          <div
-            class="text-md md:text-lg"
-            style="color: #006FF2; font-family: Inter; font-weight: 500; word-wrap: break-word"
-          >
-            { testimonial.author }
+        Testimonials
+      </h2>
+      <p class="text-center">
+        We don't like to brag, but we don't mind letting our customers do it for
+        us. <br />
+        Here are a few nice things folks have said about our themes over the years.
+      </p>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper pb-8">
+        {#each testimonials as testimonial}
+          <div class="swiper-slide !bg-transparent px-6 md:px-0">
+            <div
+              class="p-2 border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 shadow-2xl shadow-gray-600/10 dark:shadow-none md:mx-auto lg:w-10/12 xl:w-8/12"
+            >
+              <div class="grid md:grid-cols-5">
+                <img
+                  src="/gallery/bookkeeping3.jpg"
+                  class="md:col-span-2 h-full w-full rounded-2xl object-cover"
+                  alt=""
+                  width="640"
+                  height="422"
+                  loading="lazy"
+                />
+                <div
+                  class="md:col-span-3 mx-auto space-y-6 p-6 text-center sm:p-8"
+                >
+                  <div class="mx-auto w-24">
+                    <img
+                      src="/AR-logo.svg"
+                      alt="company logo"
+                      height="400"
+                      width="142"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p>
+                    <span class="font-serif">"</span>
+                    {testimonial.comment}
+                    <span class="font-serif">"</span>
+                  </p>
+                  <!-- <h6 class="text-lg font-semibold leading-none">John Doe</h6> -->
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="text-md md:text-lg"
-            style="color: #413D45; font-family: Inter; font-weight: 500; word-wrap: break-word"
-          >
-            { testimonial.caption }
-          </div>
-        </div>
+        {/each}
       </div>
-    {/each}
+      <div class="swiper-pagination" />
+    </div>
   </div>
-</section>
-
-<style>
-
-
-</style>
+</div>
