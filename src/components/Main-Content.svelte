@@ -4,7 +4,7 @@
 
 {#if details}
   <section class="md:w-1/2 p-4 rounded-3xl space-y-5">
-    <h1 class="text-4xl font-bold text-center mt-8 text-[#004391]">{details.title}</h1>
+    <h1 class="text-4xl font-bold text-center mt-8 text-[#004391] outline-none">{details.title}</h1>
     <p class="text-xl text-gray-700 font-medium text-justify ">{details.description}</p>
     <h3 class="text-2xl text-gray-800 font-bold">Our Offerings</h3>
     <ul class="space-y-1 list-disc ml-8">

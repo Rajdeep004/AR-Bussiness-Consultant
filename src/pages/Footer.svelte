@@ -1,171 +1,50 @@
-<footer
-  class="sm:w-full h-96 bg-gradient-to-b sm:bg-gradient-to-r from-[#006FF2] to-[#004391]"
->
-  <div class="flex justify-between">
-    <div class="m-16 lg:m-20">
-      <img src="AR white logo.svg" alt="AR logo" />
-    </div>
-    <div class="flex flex-col gap-4 m-16 lg:m-20">
-      <div
-        class="ring-2 ring-white text-white rounded-full p-1 lg:p-2 w-max h-max"
-      >
-        <a href="tel:+44 7466984571" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            ><g
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              ><path
-                stroke-dasharray="64"
-                stroke-dashoffset="64"
-                d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  dur="0.6s"
-                  values="64;0"
-                /></path
-              ><path
-                stroke-dasharray="4"
-                stroke-dashoffset="4"
-                d="M14 7.04404C14.6608 7.34734 15.2571 7.76718 15.7624 8.27723M16.956 10C16.6606 9.35636 16.2546 8.77401 15.7624 8.27723"
-                opacity="0"
-                ><set attributeName="opacity" begin="0.7s" to="1" /><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.7s"
-                  dur="0.2s"
-                  values="4;8"
-                /></path
-              ><path
-                stroke-dasharray="10"
-                stroke-dashoffset="10"
-                d="M20.748 9C20.3874 7.59926 19.6571 6.347 18.6672 5.3535M15 3.25203C16.4105 3.61507 17.6704 4.3531 18.6672 5.3535"
-                opacity="0"
-                ><set attributeName="opacity" begin="1s" to="1" /><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="1s"
-                  dur="0.2s"
-                  values="10;20"
-                /></path
-              ></g
-            ></svg
-          >
-        </a>
-      </div>
+<script>
+  import { Link } from "svelte-navigator";
+</script>
 
-      <div
-        class="ring-2 ring-white text-white rounded-full p-1 lg:p-2 w-max h-max"
-      >
-        <a href="mailto:info.arbusinessconsultant@gmail.com" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            ><g
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-width="2"
-              ><rect
-                width="18"
-                height="14"
-                x="3"
-                y="5"
-                stroke-dasharray="64"
-                stroke-dashoffset="64"
-                rx="1"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  dur="0.6s"
-                  values="64;0"
-                /></rect
-              ><path
-                stroke-dasharray="24"
-                stroke-dashoffset="24"
-                d="M3 6.5L12 12L21 6.5"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.6s"
-                  dur="0.4s"
-                  values="24;0"
-                /></path
-              ></g
-            ></svg
+<footer
+  class="sm:w-full bg-gradient-to-b sm:bg-gradient-to-r from-[#006FF2] to-[#004391] text-white"
+>
+  <div class="flex flex-col lg:flex-row w-full p-8 gap-6">
+    <div class="w-full">
+      <div class="border-4 rounded-full w-max scale-75">
+        <Link to="/" >
+          <img 
+            src="AR white logo.svg" 
+            alt="AR Secondary Logo"
+            class="p-6 "
           >
-        </a>
+        </Link> 
       </div>
-      <div
-        class="ring-2 ring-white text-white rounded-full p-1 lg:p-2 w-max h-max"
-      >
-        <a
-          href="https://www.linkedin.com/company/a-r-business-consultant-limited"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            ><circle cx="4" cy="4" r="2" fill="#ffffff" fill-opacity="0"
-              ><animate
-                fill="freeze"
-                attributeName="fill-opacity"
-                dur="0.4s"
-                values="0;1"
-              /></circle
-            ><g
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-width="4"
-              ><path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10V20"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.2s"
-                  dur="0.2s"
-                  values="12;0"
-                /></path
-              ><path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10V20"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.5s"
-                  dur="0.2s"
-                  values="12;0"
-                /></path
-              ><path
-                stroke-dasharray="24"
-                stroke-dashoffset="24"
-                d="M10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15V20"
-                ><animate
-                  fill="freeze"
-                  attributeName="stroke-dashoffset"
-                  begin="0.7s"
-                  dur="0.5s"
-                  values="24;0"
-                /></path
-              ></g
-            ></svg
-          >
-        </a>
+      <h3 class="text-xl font-semibold">AR Business Consultant</h3>
+    </div>
+    <div class="w-full">
+      <h4 class="text-xl font-semibold">Pages</h4>
+      <ul class="flex flex-col">
+        <Link to="/" >Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/connect">Connect</Link>
+      </ul>
+    </div>
+    <div class="w-full">
+      <div class="w-full">
+        <h4 class="text-xl font-semibold">Connect</h4>
+        <ul class="flex flex-col">
+          <a target="_blank" href="tel:+44 7466984571"><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M19 11.95q0-2.925-2.037-4.962T12 4.95v-2q1.875 0 3.513.713t2.85 1.925q1.212 1.212 1.925 2.85T21 11.95zm-4 0q0-1.25-.875-2.125T12 8.95v-2q2.075 0 3.538 1.463T17 11.95zM19.95 21q-3.125 0-6.175-1.362t-5.55-3.863q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"/></svg> <span>+44 7466984571</span></a>
+          <a target="_blank" href="mailto:info.arbusinessconsultant@gmail.com"><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"/></svg> <span>info.arbusinessconsultant@gmail.com</span></a>
+          <a target="_blank" href="https://maps.app.goo.gl/pXRBKw4SnaFDeiXy6"><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"/></svg> <span>57 Oakwood Crescent, Greenford, England, UB6 0RF</span></a>
+        </ul>
       </div>
+    </div>
+    <div class="w-full">
+      <a href="https://www.linkedin.com/company/a-r-business-consultant-limited" target="_blank"><h4 class="text-xl font-semibold">Social Media</h4></a>
+      <ul class="flex flex-col">
+        <li>Linkedin</li>
+      </ul>
     </div>
   </div>
-    <img 
-        src="/flline.svg" 
-        alt="fill line"
-        class="h-max w-32 lg:w-36 relative bottom-20 lg:bottom-32"
-    >
+  <h5 class="text-center text-lg font-bold mb-4">
+    Developed by The Coding Devotees
+  </h5>
 </footer>

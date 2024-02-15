@@ -34,14 +34,14 @@
   <div
     class="self-center w-full mt-5 px-5 max-md:max-w-full flex flex-col md:flex-row justify-center"
   >
-    <CardService heading={service[0].heading} caption={service[0].caption}/>
-    <CardService heading={service[1].heading} caption={service[1].caption}/>
-    <CardService heading={service[2].heading} caption={service[2].caption}/>
+    <CardService idx={0} heading={service[0].heading} caption={service[0].caption}/>
+    <CardService idx={1} heading={service[1].heading} caption={service[1].caption}/>
+    <CardService idx={2} heading={service[2].heading} caption={service[2].caption}/>
   </div>
   <div
     class="self-center w-full mt-5 px-5 max-md:max-w-full flex flex-col md:flex-row justify-center"
   >
-    <CardService heading={service[3].heading} caption={service[3].caption}/>
-    <CardService heading={service[4].heading} caption={service[4].caption}/>
+    <CardService idx={3} heading={service[3].heading} caption={service[3].caption}/>
+    <CardService idx={4} heading={service[4].heading} caption={service[4].caption}/>
   </div>
 </section>
