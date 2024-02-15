@@ -46,11 +46,11 @@
       >
         Testimonials
       </h2>
-      <p class="text-center">
+      <!-- <p class="text-center">
         We don't like to brag, but we don't mind letting our customers do it for
         us. <br />
         Here are a few nice things folks have said about our themes over the years.
-      </p>
+      </p> -->
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper pb-8">
